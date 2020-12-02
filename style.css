@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    width: 64px;
+    height: 64px;
+    background: #000;
+    margin:0;
+    border: 1px solid #d3d3d3;
+    /*position: absolute;*/
+    /*z-index: 100;*/
+    /*border-right: 1px solid white;*/
+    /*border-bottom: none;*/
+    /*border-top: none;*/
+}
+
+.blocks {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+.player{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    z-index: 102;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player::before{
+    content: "";
+    background: green;
+    width: 40px;
+    height: 40px;
+}
+
+.active {
+    background: white;
+}
+.heart {
+    position: absolute;
+    background: #d3d3d3;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart img {
+    height: 42px;
+    width: 42px;
+    top: 100px;
+}
+
+.hearts {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+
+}
+.bricks {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+
+}
+
+.brick {
+    position: absolute;
+    background: #d3d3d3;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brick img {
+    height: 42px;
+    width: 42px;
+    top: 100px;
+}
